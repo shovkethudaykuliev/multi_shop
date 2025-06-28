@@ -117,8 +117,12 @@ body {
     width: 100%;
     height: auto;
     border-radius: 10px;
+    transition: transform 0.5s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
-
+.left-hero img:hover{
+    transform: scale(1.01);
+}
 .hero-text {
     position: absolute;
     top: 20%;
@@ -203,7 +207,7 @@ body {
 }
 
 .info-box {
-  background-color: #fff8e1;
+  background-color: #ffffff;
   padding: 20px;
   border-radius: 8px;
   flex: 1;
@@ -228,7 +232,6 @@ body {
   gap: 20px;
 }
 .category-card {
-    border: 2px solid black;
     display: flex;
     align-items:center;
   background-color: #fff;
@@ -261,4 +264,229 @@ body {
 .category-card p {
   font-size: 14px;
   color: #666;
+}
+.featured-section {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  font-family: Arial, sans-serif;
+}
+
+.section-title {
+  font-size: 24px;
+  margin-bottom: 30px;
+  color: #333;
+  font-weight: bold;
+}
+
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.product-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+  width: 100%;
+  max-height: 150px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.product-card h3 {
+  font-size: 16px;
+  margin: 10px 0;
+  color: #333;
+}
+
+.price {
+  margin: 10px 0;
+}
+.new-price {
+  color: #e53935;
+  font-weight: bold;
+  margin-right: 10px;
+}
+.old-price {
+  color: #999;
+  text-decoration: line-through;
+}
+.rating {
+  color: #fbc02d;
+  font-size: 14px;
+}
+ * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+    body {
+      background-color: #f2f2f2;
+    }
+    .special-offers {
+      display: flex;
+      gap: 20px;
+      padding: 40px 20px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .offer-box {
+      position: relative;
+      width: 45%;
+      min-width: 300px;
+      overflow: hidden;
+      border-radius: 10px;
+    }
+
+    .offer-box img {
+      width: 100%;
+      height: auto;
+      display: block;
+      transition: transform 0.4s ease;
+    }
+
+    .offer-box:hover img {
+      transform: scale(1.05);
+    }
+
+    .offer-content {
+      position: absolute;
+      top: 25%;
+      left: 10%;
+      color: white;
+      text-shadow: 1px 1px 4px black;
+    }
+
+    .offer-content p {
+      font-size: 18px;
+    }
+
+    .offer-content h3 {
+      font-size: 28px;
+      margin: 5px 0;
+    }
+
+    .offer-content button {
+      background-color: #ffc107;
+      border: none;
+      padding: 10px 20px;
+      font-weight: bold;
+      margin-top: 10px;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .offer-content button:hover {
+      background-color: #e0a800;
+    }
+
+    .brand-logos {
+      display: flex;
+      justify-content: space-evenly;
+      gap: 30px;
+      background-color: #f2f2f2;     
+    }
+
+    .brand-logos img {
+      height: 80px;
+    }
+
+    .footer {
+  background-color: #111;
+  color: #ccc;
+  padding: 40px 20px 20px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.footer-column h4 {
+  color: #fff;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.footer-column p,
+.footer-column ul {
+  margin: 5px 0;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin: 5px 0;
+  cursor: pointer;
+}
+
+.newsletter {
+  display: flex;
+  margin: 10px 0;
+}
+
+.newsletter input {
+  flex: 1;
+  padding: 8px;
+  border: none;
+  border-radius: 3px 0 0 3px;
+}
+
+.newsletter button {
+  padding: 8px 12px;
+  background-color: orange;
+  border: none;
+  border-radius: 0 3px 3px 0;
+  color: #fff;
+  cursor: pointer;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin-right: 10px;
+  background-color: orange;
+  color: white;
+  padding: 8px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #333;
+  margin-top: 30px;
+  padding-top: 15px;
+  flex-wrap: wrap;
+}
+
+.footer-bottom .orange {
+  color: orange;
+}
+
+.payments img {
+  float: right;
 }
